@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <div><h3><p th:text="${category.name}"></p></h3></div>
+    <div th:each="b,iterStat:${blog}">
+      <p>Tieu de</p> <p th:text="${b.title}"></p>
+        <p>Noi dung</p> <p th:text="${b.content}"></p>
+        <p>Trang thai</p> <p th:text="${b.status}"></p>
+        <p>Thoi gian</p> <p th:text="${b.createDate}"></p>
+        <hr style="width: 100%; background: black" >
+    </div>
+
+</center>
+
+</body>
+</html>
